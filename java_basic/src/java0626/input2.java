@@ -25,12 +25,14 @@ public class input2 {
 		System.out.println("직원1의 월 급여액은? : ");
 		int 월급여1 = sc.nextInt();
 		
+		sc.next();
 		System.out.println("직원2의 이름은? : ");
 		String 직원2 = sc.next();
 		System.out.println("직원2의 소속부서는? : ");
 		String 부서2 = sc.next();
 		System.out.println("직원2의 월 급여액은? : ");
 		int 월급여2 = sc.nextInt();
+		// Integer.parseInt(sc.nextLine());
 		
 		float 세율 = 8;
 		float 세금율 = 세율/100;
@@ -45,7 +47,8 @@ public class input2 {
 		System.out.println(" 직원2의 이름 : " + 직원2 +"\n 직원2의 소속부서 : " + 부서2
 				+"\n 직원2의 월급 실 수령액 : " + 실수령액2 +"만원");
 		
-		
+		// next() - 스페이스키, 탭키, 엔터키 누르면 입력 끝
+		// nextLine() - 엔터키 누르면 입력 끝
 		
 	}
 
