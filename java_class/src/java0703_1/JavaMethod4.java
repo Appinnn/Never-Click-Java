@@ -21,22 +21,39 @@ public class JavaMethod4 {
 		// 국어, 영어, 수학 세 과목의 총점을 구하는 메서드
 		// 세 과목의 평균을 구하는 메서드
 		// 총점과 평균을 출력하세요
-		System.out.println("국어 점수를 입력하세요 : ");
-		int kor = scan.nextInt();
-		System.out.println("영어 점수를 입력하세요 : ");
-		int eng = scan.nextInt();
-		System.out.println("수학 점수를 입력하세요 : ");
-		int mat = scan.nextInt();
+		
+		
+		int tot = rm.getTotal();
+		int avg = rm.avg(tot);
+		System.out.println( tot +" "+ avg);
+		
+		/*
+		 * 주사위 게임
+		 * j형준과 s석완이가 주사위 게임을 한다.
+		 * 주사위는 하나, 육면이다.
+		 * 주사위의 값이 큰 사람이 이긴다.
+		 * 
+		 * 주사위 값 구하는 메서드
+		 * 
+		 * 주사위 값 비교하여 누가 이겼는지 출력하는 메서드
+		 * 
+		 */
 	}
 
 }
 
 class ReturnMth
 {
-	int total()
+	int getTotal()
 	{
-		int kor, eng, mat;
+		int kor=89, eng=78, mat=50;
+		return (kor+eng+mat);
+	}
+	int avg(int tot)
+	{
 		
+		
+		return 평균/3;
 	}
 	String getName()
 	{
