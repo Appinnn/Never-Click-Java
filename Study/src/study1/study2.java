@@ -44,18 +44,18 @@ public class study2 {
 		name.add("±Ë√·√ﬂ");
 		name.add("¿Ãº∫∞Ë");
 		
-//		for(String save : name)
-//		{
-//			if(save.contains("±Ë"))
-//			{
-//				System.out.println(save);
-//			}
-//		}
-		for(int i=0; i<name.size(); i++)
+		for(String save : name)
 		{
-			if(name.contains("±Ë"))
-				System.out.println(name);
+			if(save.contains("±Ë"))
+			{
+				System.out.println(save);
+			}
 		}
+//		for(int i=0; i<name.size(); i++)
+//		{
+//			if(name.contains("±Ë"))
+//				System.out.println(name);
+//		}
 	
 	}
 
