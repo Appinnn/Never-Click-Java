@@ -9,7 +9,7 @@
 				
 				페이지 이동을 위한 메서드 sendRedirect 
 
-
+				DB에 저장 하고 다음 페이지로 이동해야 하는 경우
 --%>
 
 <% 
@@ -17,7 +17,7 @@
 
 	if( num>20 )
 	{
-	response.sendRedirect("requestTest2.jsp");
+		response.sendRedirect("requestTest2.jsp");
 	}
 	else
 	{
