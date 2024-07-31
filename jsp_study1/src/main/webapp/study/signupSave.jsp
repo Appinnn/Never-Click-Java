@@ -18,6 +18,8 @@
 	// 1. 데이터베이스 드라이버 로드
 	// 2. 데이터베이스 계정 접속
 	
+	
+	//드라이버 로드
 	try
 	{
 		Class.forName("com.mysql.cj.jdbc.Driver");

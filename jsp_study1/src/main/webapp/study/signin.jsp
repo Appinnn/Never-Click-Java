@@ -40,7 +40,11 @@
 				}
 			else if( pw.value == '' ) // 비밀번호 입력을 하지 않은 경우
 				{
-						
+					document.getElementsByClassName("error")[1].innerText="비밀번호를 입력하세요";
+				}
+			else // 아이디, 비밀번호를 모두 입력하였다면 로그인 처리 페이지로 전송 및 이동
+				{
+					document.getElementById("signFm").submit();
 				}
 		});
 
