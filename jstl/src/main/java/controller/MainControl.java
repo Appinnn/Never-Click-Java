@@ -85,7 +85,7 @@ public class MainControl extends HttpServlet {
 		String view="/"; // 사용자가 보는 뷰페이지
 		
 		MainActive target = map.get(cmd); //요청 주소에 맞는 클래스 객체 가져오기
-		view=target.action(request, response);
+		view = target.action(request, response);
 		
 		if(view != null)
 		{

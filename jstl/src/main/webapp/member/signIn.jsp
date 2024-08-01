@@ -11,6 +11,7 @@
 <h2>로그인 화면 </h2>
 <div id="signinBox">
 	<form id="signFm" method="post" action="signInCheck.do">
+	<input type="hidden" name="preURL" id="preURL">
 		<div class="signinInput">
 			<div class="loginInput">
 				<b>아이디</b>
@@ -32,3 +33,22 @@
 </div>
 </body>
 </html>
+<script>
+	document.getElementById("preURL").value=document.referrer;
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+

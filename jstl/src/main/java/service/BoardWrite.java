@@ -11,26 +11,19 @@ public class BoardWrite implements MainActive {
 	@Override
 	public String action(HttpServletRequest request, HttpServletResponse response) {
 		String method = request.getParameter("method");
-		if( method != null ) // 게시글 작성 할 경우
-		{	
-			String title = request.getParameter("title");
+		if( method != null ) { // 게시글 작성 할경우
+			String title= request.getParameter("title");
 			String content = request.getParameter("content");
 			String writer = (String)request.getSession().getAttribute("user");
 			
-			BoardDTO dto = new BoardDTO(writer, title, content);
+			BoardDTO dto = new BoardDTO(title, writer, content);
 			
 			BoardDAO dao = new BoardDAO();
 			dao.save(dto);
-			
-			try
-			{
-				
-			}
-			
+			try { response.sendRedirect("/board.do"); }catch(Exception e) {}
 			return null;
-		}
-		else // 게시글 작성페이지 요청한 경우
-		{
+			
+		}else {// 게시글 작성페이지 요청한 경우
 			return "board/boardWrite.jsp";
 		}
 	}
